@@ -1,5 +1,5 @@
 server:
-  port: 8083
+  port: 9094
 
 eureka:
   instance:
@@ -7,4 +7,4 @@ eureka:
   client:
     register-with-eureka: true
     service-url:
-      defaultZone: http://localhost:8081/eureka/
+      defaultZone: http://localhost:9091/eureka/
