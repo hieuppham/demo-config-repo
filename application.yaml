@@ -1,8 +1,7 @@
-hieupt:
-  name: PhamTrungHieu
-  age: 22
-  address:
-    street: KhuongHa
-    number: 19
-    district: KhuongDinh
-    city: HaNoi
+eureka:
+  instance:
+    instance-id: api-gateway
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8081/eureka/
