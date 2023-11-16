@@ -1,0 +1,44 @@
+server:
+  port: 9092
+
+eureka:
+  instance:
+    instance-id: api-gateway
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:9091/eureka/
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: demo-user-service
+          uri: lb://demo-user-service
+          predicates:
+            - Path=/user/**
+          filters:
+            - SecureHeaders
+            - name: StripPrefix
+              args:
+                parts: 1
+            - name: SetRequestHostHeader
+              args:
+                host: hieupt.com.vn
+            - name: RequestSize
+              args:
+                maxSize: 1B
+        - id: demo-cart-service
+          uri: lb://demo-cart-service
+          predicates:
+            - Path=/cart/**
+          filters:
+            - name: StripPrefix
+              args:
+                parts: 1
+      enabled: true
+      default-filters:
+        - AddResponseHeader=X-Response-Default, Default-Response-For-All-Routes
