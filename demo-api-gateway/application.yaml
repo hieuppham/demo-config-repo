@@ -1,5 +1,5 @@
 server:
-  port: 9092
+  port: 8082
 
 eureka:
   instance:
@@ -7,7 +7,7 @@ eureka:
   client:
     register-with-eureka: true
     service-url:
-      defaultZone: http://localhost:9091/eureka/
+      defaultZone: http://localhost:8081/eureka/
 
 spring:
   cloud:
