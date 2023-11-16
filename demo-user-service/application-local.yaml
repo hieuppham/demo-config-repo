@@ -2,9 +2,7 @@ server:
   port: 8083
 
 eureka:
-  instance:
-    instance-id: api-gateway
   client:
     register-with-eureka: true
     service-url:
-      defaultZone: http://localhost:8081/eureka/
+      defaultZone: http://localhost:9091/eureka/

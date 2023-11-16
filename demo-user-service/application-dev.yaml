@@ -2,8 +2,6 @@ server:
   port: 9093
 
 eureka:
-  instance:
-    instance-id: api-gateway
   client:
     register-with-eureka: true
     service-url:
