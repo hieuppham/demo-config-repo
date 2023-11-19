@@ -6,3 +6,9 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: http://localhost:9091/eureka/
+
+spring:
+  datasource:
+    password: root
+    username: root
+    url: jdbc:mariadb://localhost:3306/cart
