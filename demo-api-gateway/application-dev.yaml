@@ -21,16 +21,9 @@ spring:
           predicates:
             - Path=/user/**
           filters:
-            - SecureHeaders
             - name: StripPrefix
               args:
                 parts: 1
-            - name: SetRequestHostHeader
-              args:
-                host: hieupt.com.vn
-            - name: RequestSize
-              args:
-                maxSize: 1B
         - id: demo-cart-service
           uri: lb://demo-cart-service
           predicates:
