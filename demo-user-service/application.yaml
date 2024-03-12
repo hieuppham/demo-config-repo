@@ -1,6 +1,11 @@
 server:
   port: ${demo-user-service.server.port}
 
+spring:
+  cloud:
+    discovery:
+      enabled: true
+
 eureka:
   client:
     service-url:
