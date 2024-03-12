@@ -1,0 +1,9 @@
+server:
+  port: ${demo-user-service.server.port}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${demo-api-gateway.server.address}/eureka/
+    fetch-registry: true
+    register-with-eureka: true
