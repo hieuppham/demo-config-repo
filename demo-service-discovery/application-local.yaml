@@ -1,5 +1,9 @@
+spring:
+  application:
+    name: ${demo-service-discovery.application.name}
+
 server:
-  port: 8081
+  port: ${demo-service-discovery.server.port}
 
 eureka:
   client:
