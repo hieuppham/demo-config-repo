@@ -1,0 +1,9 @@
+server:
+  port: ${demo-cart-service.server.port}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${demo-service-discovery.server.address}/eureka/
+    fetch-registry: true
+    register-with-eureka: true
