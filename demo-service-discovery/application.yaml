@@ -1,13 +1,9 @@
-spring:
-  application:
-    name: ${demo-service-discovery.application.name}
-
 server:
   port: ${demo-service-discovery.server.port}
 
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8081/eureka/
+      defaultZone: ${demo-api-gateway.server.address}/eureka/
     fetch-registry: false
     register-with-eureka: false
