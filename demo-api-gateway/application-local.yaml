@@ -1,15 +1,16 @@
 server:
-  port: 8082
+  port: ${demo-api-gateway.server.port}
 
 eureka:
-  instance:
-    instance-id: api-gateway
   client:
-    register-with-eureka: true
     service-url:
-      defaultZone: http://localhost:9091/eureka/
+      defaultZone: http://localhost:8081/eureka/
+    fetch-registry: false
+    register-with-eureka: false
 
 spring:
+  application:
+    name: ${demo-api-gateway.application.name}
   cloud:
     gateway:
       discovery:
