@@ -1,11 +1,11 @@
 server:
   port: ${demo-user-service.server.port}
 
-spring:
-  cloud:
-    loadbalancer:
-      ribbon:
-        enabled: false
+#spring:
+#  cloud:
+#    loadbalancer:
+#      ribbon:
+#        enabled: false
 
 eureka:
   client:
