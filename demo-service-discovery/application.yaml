@@ -4,6 +4,6 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: ${demo-api-gateway.server.address}/eureka/
-    fetch-registry: true
+      defaultZone: ${demo-service-discovery.server.address}/eureka/
+    fetch-registry: false
     register-with-eureka: false
