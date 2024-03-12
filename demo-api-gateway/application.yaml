@@ -6,7 +6,7 @@ eureka:
     service-url:
       defaultZone: ${demo-api-gateway.server.address}/eureka/
     fetch-registry: false
-    register-with-eureka: false
+    register-with-eureka: true
 
 spring:
   cloud:
