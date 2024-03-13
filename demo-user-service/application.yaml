@@ -2,6 +2,8 @@ server:
   port: ${demo-user-service.server.port}
 
 eureka:
+  instance:
+    instanceId: demo-user-service
   client:
     service-url:
       defaultZone: ${demo-service-discovery.server.address}/eureka/

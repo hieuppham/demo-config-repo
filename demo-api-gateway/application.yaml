@@ -2,6 +2,8 @@ server:
   port: ${demo-api-gateway.server.port}
 
 eureka:
+  instance:
+    instanceId: demo-api-gateway
   client:
     service-url:
       defaultZone: ${demo-service-discovery.server.address}/eureka/
