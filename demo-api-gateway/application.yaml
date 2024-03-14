@@ -21,11 +21,11 @@ spring:
           enabled: true
       routes:
         - id: demo-user-service
-          uri: lb://demo-user-service
+          uri: ${demo-user-service.server.address}
           predicates:
             - Header=App-name, demo-user-service
         - id: demo-user-service
-          uri: lb://demo-cart-service
+          uri: ${demo-cart-service.server.address}
           predicates:
             - Header=App-name, demo-cart-service
       enabled: true
