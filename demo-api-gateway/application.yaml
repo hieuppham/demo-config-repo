@@ -24,7 +24,7 @@ spring:
           uri: lb://demo-user-service
           predicates:
             - Header=App-name, demo-user-service
-        - id: demo-cart-service
+        - id: demo-user-service
           uri: lb://demo-cart-service
           predicates:
             - Header=App-name, demo-cart-service
