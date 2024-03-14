@@ -5,6 +5,7 @@ server:
 eureka:
   instance:
     instanceId: demo-user-service
+    homePageUrl: ${demo-user-service.server.address}
   client:
     service-url:
       defaultZone: ${demo-service-discovery.server.address}/eureka/

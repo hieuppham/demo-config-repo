@@ -5,6 +5,7 @@ server:
 eureka:
   instance:
     instanceId: demo-cart-service
+    homePageUrl: ${demo-cart-service.server.address}
   client:
     service-url:
       defaultZone: ${demo-service-discovery.server.address}/eureka/
