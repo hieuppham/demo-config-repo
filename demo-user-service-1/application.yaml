@@ -4,7 +4,7 @@ server:
 
 eureka:
   instance:
-    instanceId: demo-user-service
+    instanceId: demo-user-service-hieupt
     homePageUrl: ${demo-user-service.server.address}
   client:
     service-url:
