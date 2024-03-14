@@ -1,5 +1,6 @@
 server:
   port: ${demo-user-service.server.port}
+  host: ${global.host}
 
 eureka:
   instance:

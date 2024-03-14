@@ -1,5 +1,6 @@
 server:
   port: ${demo-service-discovery.server.port}
+  host: ${global.host}
 
 eureka:
   client:

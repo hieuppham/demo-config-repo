@@ -1,5 +1,6 @@
 server:
   port: ${demo-api-gateway.server.port}
+  host: ${global.host}
 
 eureka:
   instance:
