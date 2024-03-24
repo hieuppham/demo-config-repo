@@ -7,3 +7,9 @@ eureka:
       defaultZone: ${demo-service-discovery.server.address}/eureka/
     fetch-registry: true
     register-with-eureka: true
+
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3307/learning
+    username: root
+    password: root
